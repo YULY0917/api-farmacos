@@ -1,1 +1,38 @@
-
+[
+  {
+    "id": "1",
+    "nombre": "Paracetamol 500mg",
+    "principioActivo": "Paracetamol",
+    "dosis": "500 mg",
+    "presentacion": "16 comprimidos",
+    "farmacia": "Cruz Verde",
+    "precioTexto": "$1.000",
+    "linkCompra": "https://www.cruzverde.cl/",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  },
+  {
+    "id": "2",
+    "nombre": "Paracetamol 500mg",
+    "principioActivo": "Paracetamol",
+    "dosis": "500 mg",
+    "presentacion": "16 comprimidos",
+    "farmacia": "Salcobrand",
+    "precioTexto": "$1.200",
+    "linkCompra": "https://salcobrand.cl/",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  },
+  {
+    "id": "3",
+    "nombre": "Paracetamol 500mg",
+    "principioActivo": "Paracetamol",
+    "dosis": "500 mg",
+    "presentacion": "16 comprimidos",
+    "farmacia": "Ahumada",
+    "precioTexto": "$900",
+    "linkCompra": "https://www.farmaciasahumada.cl/",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  }
+]
