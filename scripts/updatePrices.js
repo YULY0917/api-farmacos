@@ -1,54 +1,27 @@
 
-  function limpiarPrecio(valor) {
-  if (!valor) return null;
-  const limpio = String(valor).replace(/[^\d]/g, '');
-  if (!limpio) return null;
-  return `$${Number(limpio).toLocaleString('es-CL')}`;
-}
+  for (const producto of productos) {
+  try {
+    const response = await fetch(producto.linkCompra, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0',
+      },
+    });
 
-function escaparRegex(texto) {
-  return texto.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
+    const html = await response.text();
+    const nuevoPrecio = extraerPrecio(html, producto.farmacia, producto);
 
-function extraerPrecio(html, farmacia, producto) {
-  const texto = html.replace(/\s+/g, ' ');
+    actualizados.push({
+      ...producto,
+      precioTexto: nuevoPrecio || producto.precioTexto,
+    });
 
-  if (farmacia === 'Salcobrand') {
-    // Busca explícitamente "Precio Internet" del producto principal
-    const match =
-      texto.match(/Precio Internet[^$]{0,40}\$\s?(\d{3,10})/i) ||
-      texto.match(/\$\s?(\d{3,10})\s*Precio Internet/i);
-
-    return match ? limpiarPrecio(match[1]) : null;
-  }
-
-  if (farmacia === 'Ahumada') {
-    // Ancla en el nombre del producto y luego toma el precio que viene justo después
-    const nombre = escaparRegex(producto.nombre);
-    const presentacion = escaparRegex(producto.presentacion || '');
-
-    const patron1 = new RegExp(
-      `${nombre.replace(/\s+/g, '\\s+')}[^$]{0,120}\\$\\s?(\\d{3,10})`,
-      'i'
+    console.log(
+      `OK: ${producto.nombre} - ${producto.farmacia} -> ${nuevoPrecio || producto.precioTexto}`
     );
-
-    const patron2 = new RegExp(
-      `${presentacion.replace(/\s+/g, '\\s+')}[^$]{0,120}\\$\\s?(\\d{3,10})`,
-      'i'
+  } catch (error) {
+    console.log(
+      `ERROR: ${producto.nombre} - ${producto.farmacia}: ${error.message}`
     );
-
-    const match = texto.match(patron1) || texto.match(patron2);
-    return match ? limpiarPrecio(match[1]) : null;
+    actualizados.push(producto);
   }
-
-  if (farmacia === 'Cruz Verde') {
-    // Cruz Verde es más difícil; intenta schema price si existe
-    const match =
-      texto.match(/"price"\s*:\s*"?(\\?[\d.]+)"?/i) ||
-      texto.match(/price["':\s>]+(\d{3,10})/i);
-
-    return match ? limpiarPrecio(match[1]) : null;
-  }
-
-  return null;
 }
