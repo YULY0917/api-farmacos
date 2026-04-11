@@ -37,7 +37,7 @@
   },
   {
     "id": "4",
-    "nombre": "Pyriped Ibuprofeno 400mg",
+    "nombre": "Ibuprofeno 400mg",
     "principioActivo": "Ibuprofeno",
     "dosis": "400 mg",
     "presentacion": "20 cápsulas blandas",
@@ -49,7 +49,7 @@
   },
   {
     "id": "5",
-    "nombre": "Ibuprofeno B 400mg",
+    "nombre": "Ibuprofeno 400mg",
     "principioActivo": "Ibuprofeno",
     "dosis": "400 mg",
     "presentacion": "20 comprimidos",
@@ -61,7 +61,7 @@
   },
   {
     "id": "6",
-    "nombre": "Actron 400mg",
+    "nombre": "Ibuprofeno 400mg",
     "principioActivo": "Ibuprofeno",
     "dosis": "400 mg",
     "presentacion": "20 cápsulas blandas",
@@ -123,7 +123,7 @@
   },
   {
     "id": "11",
-    "nombre": "Opko Amoxicilina B 500mg",
+    "nombre": "Amoxicilina 500mg",
     "principioActivo": "Amoxicilina",
     "dosis": "500 mg",
     "presentacion": "21 cápsulas",
@@ -135,7 +135,7 @@
   },
   {
     "id": "12",
-    "nombre": "Amoval Amoxicilina 500mg",
+    "nombre": "Amoxicilina 500mg",
     "principioActivo": "Amoxicilina",
     "dosis": "500 mg",
     "presentacion": "21 comprimidos",
