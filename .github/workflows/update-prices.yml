@@ -1,36 +1,33 @@
 name: Actualizar precios
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: "0 * * * *"   # cada 1 hora
+  workflow_dispatch:      # permite ejecutarlo manual
 
 jobs:
-  actualizar:
+  update:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
-      - name: Descargar repositorio
-        uses: actions/checkout@v4
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
 
-      - name: Configurar Node
-        uses: actions/setup-node@v4
+      - name: Instalar Node
+        uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: "18"
 
       - name: Instalar dependencias
         run: npm install
 
-      - name: Ejecutar actualización
-        run: npm run actualizar-precios
+      - name: Ejecutar script
+        run: node scripts/updatePrices.js
 
-      - name: Guardar cambios
+      - name: Subir cambios
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
           git add data/productos.json
-          git diff --staged --quiet || git commit -m "actualizar precios automaticamente"
+          git commit -m "Actualizar precios automáticamente" || echo "No hay cambios"
           git push
