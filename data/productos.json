@@ -36,3 +36,116 @@
     "fuentePrecio": "farmacia_online"
   }
 ]
+
+[
+  {
+    "id": "4",
+    "nombre": "Pyriped Ibuprofeno 400mg",
+    "principioActivo": "Ibuprofeno",
+    "dosis": "400 mg",
+    "presentacion": "20 cápsulas blandas",
+    "farmacia": "Cruz Verde",
+    "precioTexto": "$2.500",
+    "linkCompra": "https://www.cruzverde.cl/pyriped-ibuprofeno-400-mg-20-capsulas-blandas/263909.html",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  },
+  {
+    "id": "5",
+    "nombre": "Ibuprofeno B 400mg",
+    "principioActivo": "Ibuprofeno",
+    "dosis": "400 mg",
+    "presentacion": "20 comprimidos",
+    "farmacia": "Salcobrand",
+    "precioTexto": "$2.200",
+    "linkCompra": "https://salcobrand.cl/products/ibuprofeno-b-400mg-20-comprimidos?default_sku=437127&queryID=46fd79fe71440a903ab34b918449914a",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  },
+  {
+    "id": "6",
+    "nombre": "Actron 400mg",
+    "principioActivo": "Ibuprofeno",
+    "dosis": "400 mg",
+    "presentacion": "20 cápsulas blandas",
+    "farmacia": "Ahumada",
+    "precioTexto": "$2.000",
+    "linkCompra": "https://www.farmaciasahumada.cl/actron-400mg-x-20-capsulas-blandas-89764.html",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  },
+
+  {
+    "id": "7",
+    "nombre": "Omeprazol 20mg",
+    "principioActivo": "Omeprazol",
+    "dosis": "20 mg",
+    "presentacion": "30 cápsulas con gránulos",
+    "farmacia": "Cruz Verde",
+    "precioTexto": "$5.500",
+    "linkCompra": "https://www.cruzverde.cl/omeprazol-20-mg-30-capsulas-con-granulos/275886.html",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  },
+  {
+    "id": "8",
+    "nombre": "Omeprazol B 20mg",
+    "principioActivo": "Omeprazol",
+    "dosis": "20 mg",
+    "presentacion": "30 cápsulas",
+    "farmacia": "Salcobrand",
+    "precioTexto": "$5.200",
+    "linkCompra": "https://salcobrand.cl/products/omeprazol-b-20mg-30-capsulas?default_sku=430270&queryID=eb72166ff25cae682df3a98c8b617b37",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  },
+  {
+    "id": "9",
+    "nombre": "Omeprazol 20mg",
+    "principioActivo": "Omeprazol",
+    "dosis": "20 mg",
+    "presentacion": "30 cápsulas con gránulos con recubrimiento entérico",
+    "farmacia": "Ahumada",
+    "precioTexto": "$4.900",
+    "linkCompra": "https://www.farmaciasahumada.cl/omeprazol-20-mg-x-30-capsulas-con-granulos-con-recubrimiento-enterico-chile-84522.html",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  },
+
+  {
+    "id": "10",
+    "nombre": "Amoxicilina 500mg",
+    "principioActivo": "Amoxicilina",
+    "dosis": "500 mg",
+    "presentacion": "21 cápsulas",
+    "farmacia": "Cruz Verde",
+    "precioTexto": "$7.500",
+    "linkCompra": "https://www.cruzverde.cl/amoxicilina-500-mg-21-capsulas/296838.html",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  },
+  {
+    "id": "11",
+    "nombre": "Opko Amoxicilina B 500mg",
+    "principioActivo": "Amoxicilina",
+    "dosis": "500 mg",
+    "presentacion": "21 cápsulas",
+    "farmacia": "Salcobrand",
+    "precioTexto": "$7.200",
+    "linkCompra": "https://salcobrand.cl/products/opko-amoxicilina-b-500mg-21-capsulas?default_sku=1763363&queryID=d6a5872bdb378b2d9946d5e11ec2b6b4",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  },
+  {
+    "id": "12",
+    "nombre": "Amoval Amoxicilina 500mg",
+    "principioActivo": "Amoxicilina",
+    "dosis": "500 mg",
+    "presentacion": "21 comprimidos",
+    "farmacia": "Ahumada",
+    "precioTexto": "$6.800",
+    "linkCompra": "https://www.farmaciasahumada.cl/amoval-amoxicilina-500-mg-21-comprimidos-11172.html",
+    "farmaciaAutorizadaISP": true,
+    "fuentePrecio": "farmacia_online"
+  }
+]
