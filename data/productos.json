@@ -71,7 +71,6 @@
     "farmaciaAutorizadaISP": true,
     "fuentePrecio": "farmacia_online"
   },
-
   {
     "id": "7",
     "nombre": "Omeprazol 20mg",
@@ -108,7 +107,6 @@
     "farmaciaAutorizadaISP": true,
     "fuentePrecio": "farmacia_online"
   },
-
   {
     "id": "10",
     "nombre": "Amoxicilina 500mg",
@@ -128,7 +126,7 @@
     "dosis": "500 mg",
     "presentacion": "21 cápsulas",
     "farmacia": "Salcobrand",
-    "precioTexto": "$7.200",
+    "precioTexto": "$879",
     "linkCompra": "https://salcobrand.cl/products/opko-amoxicilina-b-500mg-21-capsulas?default_sku=1763363&queryID=d6a5872bdb378b2d9946d5e11ec2b6b4",
     "farmaciaAutorizadaISP": true,
     "fuentePrecio": "farmacia_online"
